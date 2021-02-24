@@ -27,7 +27,7 @@ var resultado;
 largo = parseInt(largo);
 ancho = parseInt(ancho);
 radio = parseInt(radio);
-area = radio * radio* 3.14 ;
+area = radio * radio* Math.PI ;
 resultado = area*3
 alert("alambre a comprar es: " + resultado);	
 }
@@ -36,7 +36,6 @@ function Materiales ()
 var largo = document.getElementById("Largo").value;
 var ancho = document.getElementById("Ancho").value;
 var radio = document.getElementById("Radio").value;
-var resultado;
 var cemento
 var cal;
 largo = parseInt(largo);

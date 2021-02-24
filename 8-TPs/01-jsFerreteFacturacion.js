@@ -34,19 +34,19 @@ function Promedio ()
 
 function PrecioFinal () 
 {
-	let PrecioUno;
-	let PrecioDos;
-	let PrecioTres;
+	let precioUno;
+	let precioDos;
+	let precioTres;
 	let iva;
-	let PrecioFinal;
-	
-	PrecioUno= parseInt(document.getElementById('txtIdPrecioUno').value)
-	PrecioDos= parseInt(document.getElementById('txtIdPrecioDos').value)
-	PrecioTres= parseInt(document.getElementById('txtIdPrecioTres').value)
+	let precioFinal;
+	let precioFinal
+	precioUno= parseInt(document.getElementById('txtIdPrecioUno').value)
+	precioDos= parseInt(document.getElementById('txtIdPrecioDos').value)
+	precioTres= parseInt(document.getElementById('txtIdPrecioTres').value)
 
-	iva= 21/100;
+	precio= (precioUno+PrecioDos+PrecioTres);
+	iva=PrecioFinal*21/100;
+	precioFinal= precio + iva
 
-	PrecioFinal= (PrecioUno+PrecioDos+PrecioTres);
-
-	alert(PrecioFinal+PrecioFinal*iva);
+	alert("El precio final es: "+precioFinal);
 }

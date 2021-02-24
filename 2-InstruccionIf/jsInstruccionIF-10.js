@@ -4,15 +4,11 @@ function mostrar()
 	let numero = Math.floor(Math.random() * 11);
 	
 	if (numero >=9 ) {
-		alert("Excelene")
-	} else{
-		if (numero >= 4 && numero <= 8) {
-			alert("Aprobo")
+		alert("excelente aprobo con: " + numero)
+	} else if(numero >= 4 && numero <= 8){
+			alert("Aprobo con: " + numero)
 		}else {
-			if (numero < 4) {
-				alert("Vamos, la proxima se puede")
-			}
-		}
+			alert("Vamos, la proxima se puede")
 	}
 
-}//FIN DE LA FUNCIÓN
+}
